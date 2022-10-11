@@ -7,12 +7,24 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <TextView
+            android:text="USB RELAY TEST"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" android:layout_marginTop="168dp" android:textSize="48sp"/>
+    <Button
+            android:text="OPEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/open"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            app:layout_constraintEnd_toStartOf="@+id/close" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="CLOSE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/close"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="117dp"
+            app:layout_constraintStart_toEndOf="@+id/open"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
